@@ -6,10 +6,5 @@ export const getItems = async () => {
     console.log(error)
     console.log(todos)
 
-    let { data: accessories, error1 } = await supabase
-    .from('accessories')
-    console.log(error1)
-    console.log(accessories);
-
     return todos;
 };
