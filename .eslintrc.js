@@ -10,6 +10,7 @@ module.exports = {
       // 'vue/no-unused-vars': 'off',
       // "no-unused-expressions": "off",
       // "no-unused-vars":"off"
-      "vue/html-self-closing":"off"
+      "vue/html-self-closing":"off",
+      "vue/max-attributes-per-line":"off"
     }
   }

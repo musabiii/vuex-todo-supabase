@@ -8,8 +8,9 @@
         placeholder="type todo"
         aria-label="type todo"
         aria-describedby="basic-addon2"
+        @change="handleChange"
       />
-      <button type="button" @click="handleClick" class="btn btn-primary">
+      <button type="button" class="btn btn-success" @click="handleClick">
         add
       </button>
     </div>
@@ -30,6 +31,12 @@ export default {
     handleClick(e) {
       e.preventDefault();
       this.addTodo(this.todo);
+      this.todo = "";
+    },
+    handleChange(e) {
+      e.preventDefault();
+      this.addTodo(this.todo);
+      this.todo = "";
     },
   },
 };

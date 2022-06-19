@@ -8,16 +8,14 @@
     />
     <div class="container-lg p-5">
       <input-todo />
-      <list-todo/>
+      <list-todo />
     </div>
-
-    Hello
   </div>
 </template>
 
 <script>
 import InputTodo from "./components/input-todo.vue";
-import ListTodo from './components/list-todo.vue';
+import ListTodo from "./components/list-todo.vue";
 import { getItems } from "./utils";
 
 export default {
